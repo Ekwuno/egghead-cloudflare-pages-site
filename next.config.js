@@ -4,13 +4,4 @@ module.exports = {
 		loader: 'cloudinary',
 		path: 'https://res.cloudinary.com/ekwuno',
 	},
-	redirects: async () => {
-		return [
-			{
-				source: '/start',
-				destination: '/blog',
-				permanent: true,
-			},
-		];
-	},
 };
