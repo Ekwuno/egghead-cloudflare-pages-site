@@ -5,13 +5,13 @@ module.exports = {
     path: "https://res.cloudinary.com/ekwuno",
   },
   
-  async redirects() {
-    return [
+ redirects: async()=> {
+   return [
       {
         source: '/start',
-        destination: ' /blog',
+        destination: '/blog',
         permanent: true,
       },
     ]
-  },
+ }
 };
