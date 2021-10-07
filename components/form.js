@@ -1,5 +1,8 @@
 import styles from '../styles/Home.module.css';
 
+const SERVERLESS_FN_URL =
+	'https://airtable-serverless-function.obinnacodes.workers.dev';
+
 export default function Form() {
 	return (
 		<div
@@ -12,6 +15,7 @@ export default function Form() {
 		>
 			{/* <p> Contact Us </p> */}
 			<form
+				action={SERVERLESS_FN_URL}
 				method="POST"
 				className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
 			>
