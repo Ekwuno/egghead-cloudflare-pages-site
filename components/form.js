@@ -12,7 +12,7 @@ export default function Form() {
 		>
 			{/* <p> Contact Us </p> */}
 			<form
-				action="https://airtable-worker.obinnacodes.workers.dev"
+				action="https://airtable-form-handler.obinnacodes.workers.dev/"
 				method="POST"
 				className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
 			>
