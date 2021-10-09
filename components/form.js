@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css';
 
-const Post_URL = 'https://function.obinnacodes.workers.dev';
+const Post_URL = 'https://function.obinnacodes.workers.dev/submit';
 export default function Form() {
 	return (
 		<div
