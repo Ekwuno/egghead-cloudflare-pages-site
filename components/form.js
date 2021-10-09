@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css';
 
-const Post_URL = 'https://function.obinnacodes.workers.dev/submit';
+const Post_URL = 'https://airtable-form-handler.obinnacodes.workers.dev/submit';
 export default function Form() {
 	return (
 		<div
