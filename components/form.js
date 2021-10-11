@@ -1,5 +1,8 @@
 import styles from '../styles/Home.module.css';
 
+const Airtable_function =
+	'https://airtable-function.obinnacodes.workers.dev/submit';
+
 export default function Form() {
 	return (
 		<div
@@ -12,6 +15,7 @@ export default function Form() {
 		>
 			{/* <p> Contact Us </p> */}
 			<form
+				action={Airtable_function}
 				method="POST"
 				className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
 			>
