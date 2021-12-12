@@ -1,0 +1,12 @@
+name = "airtable-function"
+type = "javascript"
+
+account_id = "c49b2a4a08c9dd362d434786702bd579"
+compatibility_date = "2021-10-11"
+route = ""
+workers_dev = true
+zone_id = ""
+[vars]
+AIRTABLE_API_KEY = "key2gIRClmD1Y01aU"
+AIRTABLE_BASE_ID = "appGOQPrlBuYJp14V"
+AIRTABLE_TABLE_NAME = "Feedback Table"
