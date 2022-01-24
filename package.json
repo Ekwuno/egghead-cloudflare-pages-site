@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npx wrangler pages dev --binding AIRTABLE_BASE_ID=\"app2FnujSQjo7sy2s\" AIRTABLE_TABLE_NAME=\"Form_submissions\"  AIRTABLE_API_KEY=\"key2gIRClmD1Y01aU\" -- npx next dev ",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,7 +14,8 @@
     "graphql-request": "^3.5.0",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "wrangler": "^0.0.10"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.4",
