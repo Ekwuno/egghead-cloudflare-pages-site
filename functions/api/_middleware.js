@@ -17,6 +17,7 @@ const abtest = async ({ request, next, env }) => {
         url.pathname = newHomepagePathName
         return env.ASSETS.fetch(url)
       }
+      return env.ASSETS.fetch(url)
     } else {
       const perc = Math.floor(Math.random() * 100)
       let version = "current" // default version
