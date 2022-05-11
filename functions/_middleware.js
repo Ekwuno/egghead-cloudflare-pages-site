@@ -30,7 +30,7 @@ const abtest = async ({ request, next, env }) => {
       // get the static file from ASSETS, and attach a cookie
       const asset = await env.ASSETS.fetch(url)
       let response = new Response(asset.body, asset)
-      response.headers.append("Set-Cookie", `${cookieName}=${version}; path=/`)
+      response.headers.append("Set-Cookie", `${cookieName}=${version};`)
       return response
     }
   }
