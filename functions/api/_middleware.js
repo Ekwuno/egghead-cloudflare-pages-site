@@ -3,6 +3,7 @@ const newHomepagePathName = "/test"
 
 const abtest = async ({ request, next, env }) => {
   const url = new URL(request.url)
+  const TettURL = new URL(request.url + newHomepagePathName )
 
   // if homepage
   if (url.pathname === "/") {
@@ -15,7 +16,7 @@ const abtest = async ({ request, next, env }) => {
       if (cookie.includes(`${cookieName}=new`)) {
         // pass the request to /new-homepage
         url.pathname = newHomepagePathName
-        return env.ASSETS.fetch(url)
+        return env.ASSETS.fetch(TettURL)
       }
       return env.ASSETS.fetch(url)
     } else {
